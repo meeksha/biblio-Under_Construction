@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100vh;
+    background-color: #f4f4f4;
+    flex-direction: column;
+}
+
+#map-container {
+    width: 80%;
+    margin: 20px;
+}
+
+#map {
+    width: 100%;
+    height: auto;
+}
+
+.region {
+    fill: #70a1ff;
+    cursor: pointer;
+    transition: fill 0.3s;
+}
+
+.region:hover {
+    fill: #1f78d1;
+}
+
+#region:active {
+    fill: #004c8f;
+}
+
+#book-info {
+    width: 30%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+#book-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#book-info p {
+    margin: 10px 0;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #218838;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIBLIo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: black; /* Black background */
+            color: white; /* Text color white */
+            flex-direction: column;
+        }
+        
+        .genre-map {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .genre {
+            position: relative;
+            padding: 15px 30px;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 18px;
+            color: white;
+            background-color: #333;
+            border: none;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        
+        .genre:hover {
+            background-color: #555;
+            transform: scale(1.1);
+        }
+        
+        /* Specific Genre Styles */
+        .mystery {
+            background-color: #033557;
+        }
+        .thriller {
+            background-color: #025002;
+        }
+        .romance {
+            background-color: #810202;
+        }
+        .fantasy {
+            background-color: #deb204fb;
+        }
+        .sf {
+            background-color: #7b2906;
+        }
+    </style>
+</head>
+<body>
+    <pre style="color: beige; font-size: larger;"> CHOOSE  A  GENRE!</pre>
+    <div class="genre-map">
+        <button class="genre mystery" onclick="location.href='mystery.html';"> Mystery</button>
+        <button class="genre thriller" onclick="location.href='thriller.html';"> Thriller</button>
+        <button class="genre romance" onclick="location.href='rom.html';">Romance</button>
+        <button class="genre fantasy" onclick="location.href='fantasy.html';"> Fantasy</button>
+        <button class="genre sf" onclick="location.href='sciencefiction.html';"> Science <br>Fiction</button>
+    </div>
+</body>
+</html>
